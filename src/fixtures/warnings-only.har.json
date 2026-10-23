@@ -1,0 +1,351 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "HAR Inspector Acceptance Generator",
+      "version": "1.0"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2026-10-22T10:00:00.000Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-0",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.100Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-1",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.200Z",
+        "time": 1400,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/slow-endpoint",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 1395,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.300Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-3",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.400Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-4",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.500Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://cdn.example.com/large-image.jpg",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1200000,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1200000
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.600Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-6",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.700Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-7",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.800Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-8",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.900Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/data/item-9",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "queryString": [],
+          "headersSize": 80,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [],
+          "content": {
+            "size": 1024,
+            "mimeType": "text/plain"
+          },
+          "headersSize": 80,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,287 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "HAR Inspector Synthetic Generator",
+      "version": "1.0.0"
+    },
+    "pages": [
+      {
+        "startedDateTime": "2026-10-22T12:00:00.000Z",
+        "id": "page_clean_store",
+        "title": "Clean E-Commerce Catalog Page",
+        "pageTimings": {
+          "onContentLoad": 180,
+          "onLoad": 320
+        }
+      }
+    ],
+    "entries": [
+      {
+        "pageref": "page_clean_store",
+        "startedDateTime": "2026-10-22T12:00:00.000Z",
+        "time": 75,
+        "request": {
+          "method": "GET",
+          "url": "https://store.example.com/",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "accept", "value": "text/html" },
+            { "name": "user-agent", "value": "HAR Inspector-Synthetic-Client/1.0" }
+          ],
+          "queryString": [],
+          "headersSize": 160,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "content-type", "value": "text/html; charset=utf-8" },
+            { "name": "content-length", "value": "14200" }
+          ],
+          "content": {
+            "size": 14200,
+            "mimeType": "text/html; charset=utf-8"
+          },
+          "redirectURL": "",
+          "headersSize": 120,
+          "bodySize": 14200
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 5,
+          "dns": 10,
+          "connect": 15,
+          "ssl": 10,
+          "send": 2,
+          "wait": 35,
+          "receive": 8
+        }
+      },
+      {
+        "pageref": "page_clean_store",
+        "startedDateTime": "2026-10-22T12:00:00.090Z",
+        "time": 30,
+        "request": {
+          "method": "GET",
+          "url": "https://static.store.example.com/css/main.css",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "accept", "value": "text/css" }
+          ],
+          "queryString": [],
+          "headersSize": 110,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "content-type", "value": "text/css" },
+            { "name": "content-length", "value": "12400" }
+          ],
+          "content": {
+            "size": 12400,
+            "mimeType": "text/css"
+          },
+          "redirectURL": "",
+          "headersSize": 100,
+          "bodySize": 12400
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "ssl": -1,
+          "send": 1,
+          "wait": 22,
+          "receive": 6
+        }
+      },
+      {
+        "pageref": "page_clean_store",
+        "startedDateTime": "2026-10-22T12:00:00.110Z",
+        "time": 45,
+        "request": {
+          "method": "GET",
+          "url": "https://static.store.example.com/js/app.js",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "accept", "value": "application/javascript" }
+          ],
+          "queryString": [],
+          "headersSize": 120,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "content-type", "value": "application/javascript" },
+            { "name": "content-length", "value": "48000" }
+          ],
+          "content": {
+            "size": 48000,
+            "mimeType": "application/javascript"
+          },
+          "redirectURL": "",
+          "headersSize": 100,
+          "bodySize": 48000
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "ssl": -1,
+          "send": 1,
+          "wait": 33,
+          "receive": 10
+        }
+      },
+      {
+        "pageref": "page_clean_store",
+        "startedDateTime": "2026-10-22T12:00:00.140Z",
+        "time": 25,
+        "request": {
+          "method": "GET",
+          "url": "https://static.store.example.com/images/logo.svg",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "accept", "value": "image/svg+xml" }
+          ],
+          "queryString": [],
+          "headersSize": 105,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "content-type", "value": "image/svg+xml" },
+            { "name": "content-length", "value": "3400" }
+          ],
+          "content": {
+            "size": 3400,
+            "mimeType": "image/svg+xml"
+          },
+          "redirectURL": "",
+          "headersSize": 95,
+          "bodySize": 3400
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "ssl": -1,
+          "send": 1,
+          "wait": 18,
+          "receive": 5
+        }
+      },
+      {
+        "pageref": "page_clean_store",
+        "startedDateTime": "2026-10-22T12:00:00.200Z",
+        "time": 85,
+        "request": {
+          "method": "GET",
+          "url": "https://api.store.example.com/v1/featured-products",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "accept", "value": "application/json" }
+          ],
+          "queryString": [],
+          "headersSize": 140,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "content-type", "value": "application/json" },
+            { "name": "content-length", "value": "6200" }
+          ],
+          "content": {
+            "size": 6200,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": 110,
+          "bodySize": 6200
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 5,
+          "connect": 10,
+          "ssl": 8,
+          "send": 1,
+          "wait": 62,
+          "receive": 6
+        }
+      },
+      {
+        "pageref": "page_clean_store",
+        "startedDateTime": "2026-10-22T12:00:00.220Z",
+        "time": 65,
+        "request": {
+          "method": "GET",
+          "url": "https://api.store.example.com/v1/categories",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "accept", "value": "application/json" }
+          ],
+          "queryString": [],
+          "headersSize": 135,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "cookies": [],
+          "headers": [
+            { "name": "content-type", "value": "application/json" },
+            { "name": "content-length", "value": "2800" }
+          ],
+          "content": {
+            "size": 2800,
+            "mimeType": "application/json"
+          },
+          "redirectURL": "",
+          "headersSize": 110,
+          "bodySize": 2800
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "ssl": -1,
+          "send": 1,
+          "wait": 58,
+          "receive": 5
+        }
+      }
+    ]
+  }
+}

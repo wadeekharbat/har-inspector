@@ -1,0 +1,5746 @@
+{
+  "log": {
+    "version": "1.2",
+    "creator": {
+      "name": "HAR Inspector Acceptance Generator",
+      "version": "1.0"
+    },
+    "entries": [
+      {
+        "startedDateTime": "2026-10-22T10:00:00.000Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-0",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.040Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-1",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.080Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-2",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.120Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-3",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.160Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-4",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.200Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-5",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.240Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-6",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.280Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-7",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.320Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-8",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.360Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-9",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.400Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-10",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.440Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-11",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.480Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-12",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.520Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-13",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.560Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-14",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.600Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-15",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.640Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-16",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.680Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-17",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.720Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-18",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.760Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-19",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.800Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-20",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.840Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-21",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.880Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-22",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.920Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-23",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:00.960Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-24",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.000Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-25",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.040Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-26",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.080Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-27",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.120Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-28",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.160Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-29",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.200Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-30",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.240Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-31",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.280Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-32",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.320Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-33",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.360Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-34",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.400Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-35",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.440Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-36",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.480Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-37",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.520Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-38",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.560Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-39",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.600Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-40",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.640Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-41",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.680Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-42",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.720Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-43",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.760Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-44",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.800Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-45",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.840Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-46",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.880Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-47",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.920Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-48",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:01.960Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-49",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.000Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-50",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.040Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-51",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.080Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-52",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.120Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-53",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.160Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-54",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.200Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-55",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.240Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-56",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.280Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-57",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.320Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-58",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.360Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-59",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.400Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-60",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.440Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-61",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.480Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-62",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.520Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-63",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.560Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-64",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.600Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-65",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.640Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-66",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.680Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-67",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.720Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-68",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.760Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-69",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.800Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-70",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.840Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-71",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.880Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-72",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.920Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-73",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:02.960Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-74",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.000Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-75",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.040Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-76",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.080Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-77",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.120Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-78",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.160Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-79",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.200Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-80",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.240Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-81",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.280Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-82",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.320Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-83",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.360Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-84",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.400Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-85",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.440Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-86",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.480Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-87",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.520Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-88",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.560Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-89",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.600Z",
+        "time": 250,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/items/resource-90",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 245,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.640Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-91",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.680Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-92",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.720Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-93",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.760Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-94",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.800Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-95",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.840Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-96",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.880Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-97",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.920Z",
+        "time": 45,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/v1/orders/poll?token=secret123",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "token",
+              "value": "secret123"
+            }
+          ],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 40,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:03.960Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-99",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.000Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-100",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.040Z",
+        "time": 45,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/v1/orders/poll?token=secret123",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "token",
+              "value": "secret123"
+            }
+          ],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 40,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.080Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-102",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.120Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-103",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.160Z",
+        "time": 45,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/v1/orders/poll?token=secret123",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [
+            {
+              "name": "token",
+              "value": "secret123"
+            }
+          ],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 40,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.200Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-105",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.240Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-106",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.280Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-107",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.320Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-108",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.360Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-109",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.400Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-110",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.440Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-111",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.480Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-112",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.520Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-113",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.560Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-114",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.600Z",
+        "time": 850,
+        "request": {
+          "method": "POST",
+          "url": "https://api.example.com/v1/checkout/capture",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 500,
+          "statusText": "Internal Server Error",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 845,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.640Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-116",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.680Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-117",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.720Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-118",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.760Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-119",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.800Z",
+        "time": 1500,
+        "request": {
+          "method": "GET",
+          "url": "https://static.example.com/bundle.js",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 1495,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.840Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-121",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.880Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-122",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.920Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-123",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:04.960Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-124",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:05.000Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://cdn.example.com/hero.png",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1500000,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1500000
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:05.040Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-126",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:05.080Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-127",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:05.120Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-128",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      },
+      {
+        "startedDateTime": "2026-10-22T10:00:05.160Z",
+        "time": 50,
+        "request": {
+          "method": "GET",
+          "url": "https://api.example.com/items/resource-129",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "accept",
+              "value": "*/*"
+            }
+          ],
+          "queryString": [],
+          "headersSize": 100,
+          "bodySize": 0
+        },
+        "response": {
+          "status": 200,
+          "statusText": "OK",
+          "httpVersion": "HTTP/2.0",
+          "headers": [
+            {
+              "name": "content-type",
+              "value": "application/json"
+            }
+          ],
+          "content": {
+            "size": 1024,
+            "mimeType": "application/json"
+          },
+          "headersSize": 100,
+          "bodySize": 1024
+        },
+        "cache": {},
+        "timings": {
+          "blocked": 1,
+          "dns": 0,
+          "connect": 0,
+          "send": 1,
+          "wait": 45,
+          "receive": 4
+        }
+      }
+    ]
+  }
+}
