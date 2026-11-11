@@ -21,41 +21,12 @@
 | 8 | GET | `https://api.example.com/v1/orders/status?order_id=ord_99812` | 200 | 50 | 480 | **Repeated GET group** (Occurrence 2 at t=3,450 ms) |
 | 9 | GET | `https://api.example.com/v1/orders/status?order_id=ord_99812` | 200 | 52 | 480 | **Repeated GET group** (Occurrence 3 at t=3,950 ms) |
 
-## Expected Diagnostic Rule Findings
+## Expected findings
 
-When evaluated against the configured diagnostic rules:
-
-1. **HTTP Error Response** (`http-error`):
-   - **Target Request**: Index 6 (`POST https://api.example.com/v1/checkout/pay`)
-   - **Observed Value**: Status 500
-   - **Rule Threshold**: Status in range [400, 599]
-   - **Observation Level**: `error`
-   - **Explanation**: A 5xx server error response was recorded for the checkout payment endpoint.
-   - **Limitation**: Status 500 indicates the server reported an internal error; it does not diagnose root cause or proof of client causality.
-
-2. **Long Request** (`long-request`):
-   - **Target Request**: Index 5 (`POST https://api.example.com/v1/shipping/rates`)
-   - **Observed Value**: Duration 1,420 ms
-   - **Rule Threshold**: Total recorded duration >= 1,000 ms
-   - **Observation Level**: `warning`
-   - **Explanation**: The shipping rate quote took 1,420 ms to complete.
-   - **Limitation**: Duration is a diagnostic heuristic; a long response does not inherently indicate network blocking or poor user-perceived performance.
-
-3. **Large Recorded Body** (`large-body`):
-   - **Target Request**: Index 3 (`GET https://cdn.example.com/images/checkout-hero-banner.png`)
-   - **Observed Value**: 1,258,291 bytes (approx. 1.20 MiB)
-   - **Rule Threshold**: `response.bodySize` >= 1,048,576 bytes (1 MiB)
-   - **Observation Level**: `warning`
-   - **Explanation**: The hero image banner exceeded 1 MiB in recorded response body bytes (`response.bodySize`).
-   - **Limitation**: Body size is taken from exporter-recorded `response.bodySize`; cache headers, compression, decoded size (`content.size`), or browser transfer mechanisms may differ.
-
-4. **Repeated GET** (`repeated-get`):
-   - **Target Group**: Index 7, 8, 9 (`GET https://api.example.com/v1/orders/status?order_id=ord_99812`)
-   - **Observed Value**: 3 requests started across a span of 950 ms (from t=3,000 ms to t=3,950 ms)
-   - **Rule Threshold**: >= 3 GET requests within a 2,000 ms window
-   - **Observation Level**: `warning`
-   - **Explanation**: 3 identical GET requests were initiated within 950 ms.
-   - **Limitation**: Rapid calls may represent polling or intentional client retry behavior; "repeated" does not imply "redundant". Grouping is based on method plus full URL (including query string), not display path alone.
+- `http-error` on request 6 (HTTP 500).
+- `long-request` on request 5 (1,420 ms).
+- `large-body` on request 3 (1,258,291 recorded bytes).
+- `repeated-get` on requests 7–9. The three requests start within 950 ms and share the same URL, including the query.
 
 ## Summary Totals
 - **Total entries**: 10

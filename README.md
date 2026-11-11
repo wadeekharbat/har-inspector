@@ -13,9 +13,7 @@ npm ci
 npm run dev
 ```
 
-Open the local address printed in the terminal (usually `http://localhost:5173`). Keep the terminal running; press Ctrl+C to stop it. No account, API key, or backend is required. Installing dependencies requires internet access. HAR processing happens locally in the browser.
-
-This repository contains the web app's source code. GitHub's file preview does not run the app, and no hosted demo is provided.
+Open the address printed in the terminal, usually `http://localhost:5173`. HAR files are processed in your browser. Press Ctrl+C to stop the development server.
 
 ## Investigate a recording
 
@@ -25,13 +23,13 @@ This repository contains the web app's source code. GitHub's file preview does n
 4. Inspect status, duration, size, and phase timings. Use search, filters, sorting, and pagination to narrow the request list.
 5. Reset the session to clear the active recording.
 
-The clean example demonstrates a recording without matching diagnostic rules. It is not proof that a system is healthy. Export guidance is available inside the dashboard.
+The clean example shows what the dashboard looks like when none of the rules match. For export steps, open **Export help** in the app.
 
 ## Privacy and limits
 
 Imports are held in memory. The app does not upload recordings, replay requests, fetch recorded URLs, or save sessions to browser storage. Reloading clears the session.
 
-The normalized model excludes headers, cookies, request bodies, response content, embedded URL credentials, fragments, and query parameter values. **Hostnames and URL paths can still contain sensitive data.** Sanitization is not complete anonymization. Use synthetic or reviewed sanitized recordings when reporting issues; never attach private captures or screenshots containing confidential paths.
+The displayed recording omits headers, cookies, bodies, URL credentials, fragments, and query values. Hostnames and paths remain visible and may contain sensitive data. Use synthetic or reviewed recordings when filing issues.
 
 - Maximum file size: 10 MiB.
 - Maximum raw entries: 2,000, before invalid entries are filtered.
@@ -48,7 +46,7 @@ The normalized model excludes headers, cookies, request bodies, response content
 | Large body | Recorded `response.bodySize` at least 1 MiB |
 | Repeated GET | At least three GET calls to the same endpoint within 2,000 ms |
 
-Findings describe recorded conditions, not root causes. Missing timings and sizes remain unknown rather than being treated as zero. Thresholds are defined in `src/domain/types.ts`.
+The rules flag values recorded in the HAR. Missing timings and sizes appear as unknown. Thresholds are defined in `src/domain/types.ts`.
 
 ## Development
 
@@ -62,11 +60,11 @@ npx playwright install chromium
 npm run test:e2e
 ```
 
-The recorded suite contains 135 unit tests and 11 Chromium browser tests. Browser checks cover imports, evidence navigation, filters, keyboard handling, mobile layout, privacy behavior, and a 2,000-entry recording. Results depend on the local environment; no universal performance guarantee is made.
+Browser tests cover imports, evidence navigation, filters, keyboard handling, mobile layout, local processing, and a 2,000-entry recording.
 
-For a local production preview, run `npm run build` then `npm run preview`. Build output is written to `dist/`.
+For a local production preview, run `npm run build` then `npm run preview`. Build output is written to `dist/`. The build includes the project's `LICENSE` and `THIRD_PARTY_NOTICES.txt`. Keep both files with the compiled app when distributing it.
 
-Additional commands:
+To regenerate the test captures or refresh the README screenshots, run the relevant command below.
 
 ```sh
 npm run fixtures:generate
@@ -83,8 +81,8 @@ Browser test captures are generated automatically before `npm run test:e2e`; the
 
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for issue reports and pull requests. Contributions to the official repository are reviewed by its maintainer.
+See the contribution guide for issue reports and pull requests. [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ## License
 
-[MIT](LICENSE). Copyright 2026 Wadee.
+[MIT](LICENSE). Copyright 2026 Wadee Kharbat.

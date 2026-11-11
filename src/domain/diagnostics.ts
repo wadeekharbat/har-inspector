@@ -1,9 +1,3 @@
-/**
- * HAR Inspector — Transparent Diagnostics Domain Logic
- * Pure, deterministic diagnostic rules implementing the 5 fixed v1 rule families
- * for recorded HAR data.
- */
-
 import {
   DiagnosticFinding,
   FindingRuleId,
@@ -23,9 +17,6 @@ export interface DiagnosticsSummary {
   uniqueAffectedRequestCount: number;
 }
 
-/**
- * Formats a byte count into a human-readable string (B, KB, MB).
- */
 export function formatBytes(bytes: number): string {
   if (bytes < 1024) {
     return `${bytes} B`;
@@ -36,12 +27,6 @@ export function formatBytes(bytes: number): string {
   return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
 }
 
-/**
- * Rule 1: HTTP Error Response
- * Flags requests with recorded status 400–599.
- * 4xx is classified as warning (client error); 5xx is classified as error (server error).
- * Explains status without diagnosing authentication or server code from status alone.
- */
 export function evaluateHttpErrorRule(
   requests: readonly NormalizedRequest[]
 ): DiagnosticFinding[] {
@@ -81,11 +66,7 @@ export function evaluateHttpErrorRule(
   return findings;
 }
 
-/**
- * Rule 2: No HTTP Status
- * Flags requests with recorded status 0 as missing recorded response status (informational).
- * Null status is a data-quality warning handled during normalization, not a failure diagnosis.
- */
+// Status 0 comes from the exporter. Null is handled as a data-quality issue.
 export function evaluateNoHttpStatusRule(
   requests: readonly NormalizedRequest[]
 ): DiagnosticFinding[] {
@@ -118,11 +99,6 @@ export function evaluateNoHttpStatusRule(
   return findings;
 }
 
-/**
- * Rule 3: Long Request
- * Flags requests with known total duration >= 1,000 ms.
- * Unknown duration (null) never triggers this rule.
- */
 export function evaluateLongRequestRule(
   requests: readonly NormalizedRequest[]
 ): DiagnosticFinding[] {
@@ -154,11 +130,6 @@ export function evaluateLongRequestRule(
   return findings;
 }
 
-/**
- * Rule 4: Large Recorded Body
- * Flags requests with known response bodySize >= 1,048,576 bytes (1 MiB).
- * Unknown body size (null) never triggers this rule.
- */
 export function evaluateLargeBodyRule(
   requests: readonly NormalizedRequest[]
 ): DiagnosticFinding[] {
@@ -191,19 +162,12 @@ export function evaluateLargeBodyRule(
   return findings;
 }
 
-/**
- * Rule 5: Repeated GET
- * Flags at least 3 GET requests in the same ephemeral URL group with any 3 consecutive
- * starts within a 2,000 ms window (inclusive).
- * Returns one grouped finding per matching group containing all request IDs in qualifying windows, deduplicated.
- * Strictly GET method only; preserves query distinction via urlGroupId.
- */
+// Report one finding per URL group. Include each request that falls in a qualifying window.
 export function evaluateRepeatedGetRule(
   requests: readonly NormalizedRequest[]
 ): DiagnosticFinding[] {
   const findings: DiagnosticFinding[] = [];
 
-  // Group GET requests by ephemeral urlGroupId
   const groups = new Map<string, NormalizedRequest[]>();
   for (const req of requests) {
     if (req.method === 'GET') {
@@ -221,7 +185,6 @@ export function evaluateRepeatedGetRule(
       continue;
     }
 
-    // Sort requests by startOffsetMs ascending, with sourceIndex as deterministic tie-breaker
     const sorted = [...groupRequests].sort((a, b) => {
       if (a.startOffsetMs !== b.startOffsetMs) {
         return a.startOffsetMs - b.startOffsetMs;
@@ -232,7 +195,6 @@ export function evaluateRepeatedGetRule(
     const qualifyingIdsSet = new Set<string>();
     let qualifyingWindowsCount = 0;
 
-    // Check all consecutive triples
     for (let i = 0; i <= sorted.length - RULE_THRESHOLDS.REPEATED_GET_MIN_COUNT; i++) {
       const first = sorted[i];
       const third = sorted[i + (RULE_THRESHOLDS.REPEATED_GET_MIN_COUNT - 1)];
@@ -247,7 +209,6 @@ export function evaluateRepeatedGetRule(
     }
 
     if (qualifyingIdsSet.size > 0) {
-      // Sort matching IDs deterministically by sourceIndex (original session order)
       const matchingRequests = sorted.filter((r) => qualifyingIdsSet.has(r.id));
       matchingRequests.sort((a, b) => a.sourceIndex - b.sourceIndex);
       const requestIds = matchingRequests.map((r) => r.id);
@@ -278,9 +239,6 @@ export function evaluateRepeatedGetRule(
   return findings;
 }
 
-/**
- * Deterministic category order for diagnostic findings.
- */
 const RULE_CATEGORY_ORDER: Record<FindingRuleId, number> = {
   'http-error': 1,
   'no-http-status': 2,
@@ -289,10 +247,7 @@ const RULE_CATEGORY_ORDER: Record<FindingRuleId, number> = {
   'large-body': 5,
 };
 
-/**
- * Evaluates all 5 diagnostic rule families and returns deterministically sorted findings.
- * Sorting is stable: category order first, then earliest request source index, then finding ID.
- */
+// Sort by category and original request order so findings stay stable across runs.
 export function evaluateDiagnostics(
   requests: readonly NormalizedRequest[]
 ): DiagnosticFinding[] {
@@ -310,21 +265,18 @@ export function evaluateDiagnostics(
     ...repeatedGetFindings,
   ];
 
-  // Helper to find the earliest sourceIndex among request IDs in a finding
   const requestIndexMap = new Map<string, number>();
   for (const req of requests) {
     requestIndexMap.set(req.id, req.sourceIndex);
   }
 
   return allFindings.sort((a, b) => {
-    // 1. Category order
     const catA = RULE_CATEGORY_ORDER[a.ruleId] ?? 99;
     const catB = RULE_CATEGORY_ORDER[b.ruleId] ?? 99;
     if (catA !== catB) {
       return catA - catB;
     }
 
-    // 2. Earliest sourceIndex of associated requests
     const minIndexA = Math.min(
       ...a.requestIds.map((id) => requestIndexMap.get(id) ?? Number.MAX_SAFE_INTEGER)
     );
@@ -335,14 +287,11 @@ export function evaluateDiagnostics(
       return minIndexA - minIndexB;
     }
 
-    // 3. Finding ID tie-breaker
     return a.id.localeCompare(b.id);
   });
 }
 
-/**
- * Computes summary statistics for diagnostic findings without double-counting requests.
- */
+// A request can match several rules. Count it once in the summary.
 export function computeDiagnosticsSummary(
   findings: readonly DiagnosticFinding[],
   _totalRequests: number
@@ -375,10 +324,6 @@ export function computeDiagnosticsSummary(
   };
 }
 
-/**
- * Filters diagnostic findings by observation level.
- * Pure function: does not mutate input findings.
- */
 export function filterFindingsByLevel(
   findings: readonly DiagnosticFinding[],
   levelFilter: 'all' | ObservationLevel

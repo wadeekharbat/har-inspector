@@ -304,8 +304,7 @@ describe('Clean E-Commerce Catalog Fixture ()', () => {
     expect(html).toContain('1,410 ms recorded HAR wait phase');
     // Must NOT contain erroneous 1,390 ms claim
     expect(html).not.toContain('1,390 ms');
-    // Must contain HAR wait phase wording
-    expect(html).toContain('202 ms recorded HAR wait phase');
+    expect(html).toContain('The HAR recorded a 202 ms wait for the response.');
     // Must NOT contain categorical 'Server Failure'
     expect(html).not.toContain('Server Failure');
     expect(html).toContain('HTTP 500 Error');

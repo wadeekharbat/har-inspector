@@ -87,8 +87,7 @@ export const FindingsPanel: React.FC<FindingsPanelProps> = ({
             <span></span> Automated Diagnostic Findings
           </h2>
           <p className="section-desc">
-            Deterministic heuristics for investigation. A finding flags recorded characteristics;
-            it does not prove application causality, server root cause, or user impact.
+            Findings flag request values recorded in this HAR.
           </p>
         </div>
 

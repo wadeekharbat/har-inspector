@@ -1,8 +1,3 @@
-/**
- * HAR Inspector Core Domain Types & Contracts
- * Types shared by parsing, diagnostics, and the request explorer.
- */
-
 export interface TimingPhases {
   blocked?: number | null;
   dns?: number | null;

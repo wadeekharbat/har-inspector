@@ -4,7 +4,6 @@ import { RULE_THRESHOLDS } from './types';
 import syntheticCheckoutFixture from '../fixtures/synthetic-checkout.har.json';
 
 describe('HAR Parser & Normalizer ()', () => {
-  // 1. Valid synthetic fixture
   it('parses the valid synthetic checkout fixture with accurate totals and timeline', () => {
     const result = parseHarData(syntheticCheckoutFixture);
     expect(result.success).toBe(true);
@@ -29,7 +28,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect(session.stats.unknownStatusCount).toBe(0);
   });
 
-  // 2. Invalid JSON and missing log/entries
   it('rejects invalid JSON string and missing log / entries array without leaking raw content', () => {
     const badJson = parseHarContent('{ malformed json');
     expect(badJson.success).toBe(false);
@@ -67,7 +65,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect(nonArrayEntries.success).toBe(false);
   });
 
-  // 3. Empty entries
   it('handles empty entries recording cleanly with null timeline origin', () => {
     const result = parseHarData({ log: { version: '1.2', entries: [] } });
     expect(result.success).toBe(true);
@@ -81,7 +78,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect(result.session.timeline.totalSpanMs).toBe(0);
   });
 
-  // 4. Some and all malformed entries
   it('skips partially malformed entries with aggregate warning and rejects when all are malformed', () => {
     // 3 entries: 1 valid, 1 missing method, 1 missing response
     const partialData = {
@@ -141,7 +137,6 @@ describe('HAR Parser & Normalizer ()', () => {
     }
   });
 
-  // 5. Missing optional metadata
   it('accepts entries missing optional metadata fields without failure', () => {
     const minimalHar = {
       log: {
@@ -171,7 +166,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect(req.warnings).toHaveLength(0);
   });
 
-  // 6. Version warning
   it('generates a compatibility warning when HAR version is missing or differs from 1.2', () => {
     const noVersionHar = {
       log: {
@@ -209,7 +203,6 @@ describe('HAR Parser & Normalizer ()', () => {
     }
   });
 
-  // 7. UTF-8 BOM
   it('ignores a leading UTF-8 BOM when parsing raw content', () => {
     const rawHar = JSON.stringify({
       log: {
@@ -233,7 +226,6 @@ describe('HAR Parser & Normalizer ()', () => {
     }
   });
 
-  // 8. Unsorted timestamps
   it('calculates timeline origin from earliest timestamp regardless of entry order and preserves source index', () => {
     const unsortedHar = {
       log: {
@@ -274,7 +266,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect(req1.startOffsetMs).toBe(0);
   });
 
-  // 9. Timezone conversion
   it('converts differing timezone offsets to the identical UTC instant', () => {
     const timezoneHar = {
       log: {
@@ -406,7 +397,6 @@ describe('HAR Parser & Normalizer ()', () => {
     }
   });
 
-  // 10. Zero / unknown / negative timings and sizes
   it('correctly handles zero, negative, and missing durations, body sizes, and phase timings', () => {
     const timingsHar = {
       log: {
@@ -453,7 +443,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect(req1.warnings.some((w) => w.code === 'UNKNOWN_BODY_SIZE')).toBe(true);
   });
 
-  // 11. Status 0 vs null
   it('distinguishes status 0 (no HTTP status recorded) from null/invalid status', () => {
     const statusHar = {
       log: {
@@ -502,7 +491,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect(result.session.stats.httpErrorCount).toBe(0);
   });
 
-  // 12. Malformed URLs
   it('skips entries with malformed or unsupported non-HTTP(S) URLs', () => {
     const badUrlHar = {
       log: {
@@ -539,7 +527,6 @@ describe('HAR Parser & Normalizer ()', () => {
     }
   });
 
-  // 13. Unknown extensions
   it('ignores arbitrary extension fields and does not leak them into normalized state', () => {
     const extensionHar = {
       log: {
@@ -576,7 +563,6 @@ describe('HAR Parser & Normalizer ()', () => {
     expect((req as unknown as Record<string, unknown>)._customRequestProp).toBeUndefined();
   });
 
-  // 14. Exact file and entry boundaries and over-limit refusal
   it('enforces exact raw entry boundary (2,000 accepted, 2,001 rejected)', () => {
     const makeEntries = (count: number) => {
       const entries = [];
@@ -637,7 +623,6 @@ describe('HAR Parser & Normalizer ()', () => {
     }
   });
 
-  // 15. Sensitive fields and privacy guarantees
   it('strips credentials, query values, fragments, headers, cookies, and bodies from normalized state', () => {
     const rawSensitiveHar = {
       log: {
@@ -709,7 +694,6 @@ describe('HAR Parser & Normalizer ()', () => {
     }
   });
 
-  // 16. Ephemeral grouping distinct across differing queries
   it('assigns distinct urlGroupId to requests sharing the same sanitized path but differing queries, and matching group IDs to identical queries', () => {
     const groupingHar = {
       log: {

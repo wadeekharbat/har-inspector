@@ -13,11 +13,7 @@ export type ParseResult =
   | { success: true; session: NormalizedSession }
   | { success: false; error: string };
 
-/**
- * Checks whether an entry has a parseable timestamp that includes an explicit timezone indicator.
- * HAR 1.2 / ISO 8601 requires explicit date, time, and timezone offset (e.g. "2009-07-24T19:20:30.450+01:00", "Z", "+03:00").
- * Date-only strings (e.g. "2026-10-22") or timezone-less timestamps (e.g. "2026-10-22T10:00:00") are rejected.
- */
+// Require a timezone so parsing cannot depend on the machine's local timezone.
 function isValidIsoWithTimezone(dateTimeStr: string): boolean {
   if (typeof dateTimeStr !== 'string') return false;
   const trimmed = dateTimeStr.trim();
@@ -34,16 +30,9 @@ function isValidIsoWithTimezone(dateTimeStr: string): boolean {
   return Number.isFinite(parsed) && !Number.isNaN(parsed);
 }
 
-/**
- * Sanitizes a URL for display and safe presentation:
- * - Omits credentials (username, password)
- * - Omits fragment (#hash)
- * - If query parameters are present, replaces entire query with "?query_omitted" indicator
- * - Never returns active links or raw query values
- */
+// Keep only the origin and path for display, with a marker when a query was present.
 function sanitizeDisplayUrl(parsedUrl: URL, originalUrlStr: string): string {
   const originAndPath = `${parsedUrl.origin}${parsedUrl.pathname}`;
-  // Check if original URL has query parameters before any fragment
   const beforeHash = originalUrlStr.split('#')[0] ?? '';
   const hasQuery = Boolean(parsedUrl.search) || beforeHash.includes('?');
   if (hasQuery) {
@@ -52,11 +41,7 @@ function sanitizeDisplayUrl(parsedUrl: URL, originalUrlStr: string): string {
   return originAndPath;
 }
 
-/**
- * Creates an ephemeral grouping key from method + full URL with query parameters,
- * stripping credentials and fragments. Used only during parsing to assign ephemeral
- * urlGroupId and cleared before returning.
- */
+// Use the query for grouping during parsing without exposing its values in the session.
 function createGroupingKey(method: string, parsedUrl: URL): string {
   const cleanUrl = new URL(parsedUrl.toString());
   cleanUrl.username = '';
@@ -65,10 +50,7 @@ function createGroupingKey(method: string, parsedUrl: URL): string {
   return `${method} ${cleanUrl.toString()}`;
 }
 
-/**
- * Parses and normalizes phase timings. Negative values or -1 become null.
- * SSL is recorded as a separate phase but noted as a subset of connect.
- */
+// SSL is part of connect time. Keep both values for display without adding them together.
 function parseTimings(rawTimings: unknown): TimingPhases | null {
   if (!rawTimings || typeof rawTimings !== 'object' || Array.isArray(rawTimings)) {
     return null;
@@ -101,10 +83,6 @@ function parseTimings(rawTimings: unknown): TimingPhases | null {
   return hasAnyPhase ? phases : null;
 }
 
-/**
- * Parse HAR data into a sanitized request model.
- * Independent of React and browser DOM.
- */
 export function parseHarData(data: unknown): ParseResult {
   if (!data || typeof data !== 'object' || Array.isArray(data)) {
     return {
@@ -144,7 +122,6 @@ export function parseHarData(data: unknown): ParseResult {
 
   const sessionWarnings: SessionWarning[] = [];
 
-  // Version check (HAR 1.2 is expected)
   const rawVersion = log.version;
   if (rawVersion !== '1.2') {
     sessionWarnings.push({
@@ -154,7 +131,6 @@ export function parseHarData(data: unknown): ParseResult {
     });
   }
 
-  // Handle empty entries recording
   if (totalRawEntries === 0) {
     const emptyStats: SessionStats = {
       totalRawEntries: 0,
@@ -213,7 +189,6 @@ export function parseHarData(data: unknown): ParseResult {
 
     const entry = rawEntry as Record<string, unknown>;
 
-    // 1. Timestamp with timezone
     if (typeof entry.startedDateTime !== 'string' || !isValidIsoWithTimezone(entry.startedDateTime)) {
       skippedEntriesCount++;
       continue;
@@ -221,7 +196,6 @@ export function parseHarData(data: unknown): ParseResult {
     const startedDateTime = entry.startedDateTime.trim();
     const timestampMs = Date.parse(startedDateTime);
 
-    // 2. Request validation
     if (!entry.request || typeof entry.request !== 'object' || Array.isArray(entry.request)) {
       skippedEntriesCount++;
       continue;
@@ -253,7 +227,6 @@ export function parseHarData(data: unknown): ParseResult {
       continue;
     }
 
-    // 3. Response validation
     if (!entry.response || typeof entry.response !== 'object' || Array.isArray(entry.response)) {
       skippedEntriesCount++;
       continue;
@@ -262,7 +235,6 @@ export function parseHarData(data: unknown): ParseResult {
 
     const requestWarnings: RequestWarning[] = [];
 
-    // Duration (finite nonnegative ms, otherwise null)
     let durationMs: number | null = null;
     if (typeof entry.time === 'number' && Number.isFinite(entry.time) && entry.time >= 0) {
       durationMs = entry.time;
@@ -273,7 +245,6 @@ export function parseHarData(data: unknown): ParseResult {
       });
     }
 
-    // Status (finite integer 0-599; otherwise null)
     let status: number | null = null;
     if (
       typeof rawRes.status === 'number' &&
@@ -289,7 +260,6 @@ export function parseHarData(data: unknown): ParseResult {
       });
     }
 
-    // Body bytes (finite nonnegative bodySize; otherwise null)
     let bodyBytes: number | null = null;
     if (
       typeof rawRes.bodySize === 'number' &&
@@ -304,7 +274,6 @@ export function parseHarData(data: unknown): ParseResult {
       });
     }
 
-    // MIME type
     let mimeType: string | null = null;
     if (
       rawRes.content &&
@@ -317,7 +286,6 @@ export function parseHarData(data: unknown): ParseResult {
       }
     }
 
-    // Timings
     const timings = parseTimings(entry.timings);
 
     // Ephemeral URL Grouping (method + full URL with query, without credentials/fragment)
@@ -356,10 +324,8 @@ export function parseHarData(data: unknown): ParseResult {
     };
   }
 
-  // Calculate timeline origin (earliest start timestamp among all accepted requests)
   const originTimestampMs = Math.min(...intermediateList.map((item) => item.timestampMs));
 
-  // Build final normalized requests
   const normalizedRequests: NormalizedRequest[] = intermediateList.map((item) => {
     const startOffsetMs = item.timestampMs - originTimestampMs;
     const displayUrl = sanitizeDisplayUrl(item.parsedUrl, item.originalUrlStr);
@@ -383,7 +349,6 @@ export function parseHarData(data: unknown): ParseResult {
     };
   });
 
-  // Calculate total timeline span: max(startOffsetMs + (durationMs ?? 0))
   const extents = normalizedRequests.map((r) => r.startOffsetMs + (r.durationMs ?? 0));
   const totalSpanMs = Math.max(0, ...extents);
 
@@ -392,7 +357,6 @@ export function parseHarData(data: unknown): ParseResult {
     totalSpanMs,
   };
 
-  // Compute aggregate statistics
   let knownBodyBytesTotal = 0;
   let unknownBodyBytesCount = 0;
   let httpErrorCount = 0;
@@ -432,7 +396,6 @@ export function parseHarData(data: unknown): ParseResult {
     unknownStatusCount,
   };
 
-  // Session-level warnings for skipped entries and data quality
   if (skippedEntriesCount > 0) {
     sessionWarnings.push({
       code: 'SKIPPED_ENTRIES',
@@ -471,10 +434,6 @@ export function parseHarData(data: unknown): ParseResult {
   };
 }
 
-/**
- * Parses raw HAR text content (e.g. from File or fetch).
- * Checks 10 MiB limit before parsing and strips leading UTF-8 BOM if present.
- */
 export function parseHarContent(rawContent: string, declaredByteSize?: number): ParseResult {
   // Check declared byte size if provided (e.g. File.size checked before reading)
   if (declaredByteSize !== undefined && declaredByteSize > RULE_THRESHOLDS.MAX_FILE_BYTES) {
@@ -500,7 +459,6 @@ export function parseHarContent(rawContent: string, declaredByteSize?: number): 
     };
   }
 
-  // Strip leading UTF-8 BOM (\uFEFF) if present
   let cleanContent = rawContent;
   if (cleanContent.charCodeAt(0) === 0xfeff) {
     cleanContent = cleanContent.slice(1);

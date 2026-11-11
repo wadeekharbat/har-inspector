@@ -82,14 +82,10 @@ export const DEFAULT_SORT_STATE: ExplorerSortState = {
   direction: 'asc',
 };
 
-/**
- * Checks if a request matches the active filter criteria.
- */
 export function matchesFilter(
   request: NormalizedRequest,
   filters: ExplorerFilterState
 ): boolean {
-  // 1. Search Query (matches method, displayUrl, hostname, or origin case-insensitively)
   const trimmedQuery = filters.searchQuery.trim().toLowerCase();
   if (trimmedQuery.length > 0) {
     const matchesMethod = request.method.toLowerCase().includes(trimmedQuery);
@@ -102,12 +98,10 @@ export function matchesFilter(
     }
   }
 
-  // 2. Domain Filter
   if (filters.selectedDomain !== 'all' && request.hostname !== filters.selectedDomain) {
     return false;
   }
 
-  // 3. Status Group Filter
   switch (filters.statusGroup) {
     case '2xx':
       return request.status !== null && request.status >= 200 && request.status <= 299;
@@ -127,10 +121,6 @@ export function matchesFilter(
   }
 }
 
-/**
- * Pure filter function returning matching requests.
- * Does not mutate original requests.
- */
 export function filterRequests(
   requests: readonly NormalizedRequest[],
   filters: ExplorerFilterState
@@ -138,11 +128,7 @@ export function filterRequests(
   return requests.filter((req) => matchesFilter(req, filters));
 }
 
-/**
- * Deterministic comparison function with the following ordering:
- * - Equal values break ties using original sourceIndex ascending.
- * - Unknown numeric values sort last in either direction (asc and desc).
- */
+// Keep unknown values last in both directions and break ties by original request order.
 export function compareRequests(
   a: NormalizedRequest,
   b: NormalizedRequest,
@@ -158,7 +144,6 @@ export function compareRequests(
     if (valA === null && valB === null) {
       return a.sourceIndex - b.sourceIndex;
     }
-    // Unknown numeric values sort last in BOTH directions
     if (valA === null) {
       return 1;
     }
@@ -194,10 +179,6 @@ export function compareRequests(
   return a.sourceIndex - b.sourceIndex;
 }
 
-/**
- * Pure sort function returning deterministically sorted requests.
- * Does not mutate the normalized session.
- */
 export function sortRequests(
   requests: readonly NormalizedRequest[],
   sort: ExplorerSortState
@@ -205,9 +186,6 @@ export function sortRequests(
   return [...requests].sort((a, b) => compareRequests(a, b, sort));
 }
 
-/**
- * Paginates items with automatic page clamping.
- */
 export function paginateItems<T>(
   items: readonly T[],
   page: number,
@@ -230,12 +208,7 @@ export function paginateItems<T>(
   };
 }
 
-/**
- * Computes waterfall timeline visual metrics for a single request.
- * - Handles all-zero extents with a minimum visual scale without changing true values.
- * - Unknown duration gets a marker (widthPercent: 0, isUnknownDuration: true).
- * - Defensively clips percentages to [0, 100].
- */
+// Use a minimum scale for layout while keeping zero and unknown durations as markers.
 export function computeWaterfallMetrics(
   request: NormalizedRequest,
   sessionTotalSpanMs: number,
@@ -281,10 +254,6 @@ export function computeWaterfallMetrics(
   };
 }
 
-/**
- * Shared production rendering model used by components to position and render waterfall elements.
- * Preserves exact computed widths and selects appropriate point markers without fabricating positive bars.
- */
 export function computeWaterfallRenderModel(
   request: NormalizedRequest,
   sessionTotalSpanMs: number,
@@ -315,9 +284,6 @@ export function computeWaterfallRenderModel(
   };
 }
 
-/**
- * Extracts unique domain hostnames from a list of requests, sorted alphabetically.
- */
 export function extractUniqueDomains(requests: readonly NormalizedRequest[]): string[] {
   const domains = new Set<string>();
   for (const req of requests) {
@@ -328,10 +294,6 @@ export function extractUniqueDomains(requests: readonly NormalizedRequest[]): st
   return Array.from(domains).sort((a, b) => a.localeCompare(b));
 }
 
-/**
- * Computes complete summary statistics for the session explorer.
- * Keeps status 0 distinct from unknown, and known-byte totals distinct from unknown-size counts.
- */
 export function computeSessionSummary(session: NormalizedSession): ExplorerSessionSummary {
   let noStatusCount = 0;
   let unknownStatusCount = 0;

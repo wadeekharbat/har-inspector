@@ -109,13 +109,11 @@ export const RequestExplorer: React.FC<RequestExplorerProps> = ({
 
   const handleSortFieldChange = (field: SortField) => {
     if (sort.field === field) {
-      // Toggle direction if clicking same field
       setSort((prev) => ({
         ...prev,
         direction: prev.direction === 'asc' ? 'desc' : 'asc',
       }));
     } else {
-      // Default to ascending for newly selected field
       setSort({ field, direction: 'asc' });
     }
   };
@@ -124,7 +122,6 @@ export const RequestExplorer: React.FC<RequestExplorerProps> = ({
     if (!selectedRequestId) return;
     // Clear filters so the request is visible
     setFilters(DEFAULT_FILTER_STATE);
-    // Find page of selected request in unfiltered sorted list
     const unfilteredSorted = sortRequests(session.requests, sort);
     const index = unfilteredSorted.findIndex((r) => r.id === selectedRequestId);
     if (index >= 0) {
@@ -140,7 +137,6 @@ export const RequestExplorer: React.FC<RequestExplorerProps> = ({
     const targetReq = session.requests.find((r) => r.id === navigationTarget.requestId);
     if (!targetReq) return;
 
-    // Check if current active filters would hide the target request
     const wouldMatch = matchesFilter(targetReq, filters);
     let effectiveFilters = filters;
 
@@ -153,14 +149,11 @@ export const RequestExplorer: React.FC<RequestExplorerProps> = ({
       );
     }
 
-    // Set selected request
     setSelectedRequestId(navigationTarget.requestId);
     onSelectedRequestChange?.(navigationTarget.requestId);
 
-    // Set highlighted request IDs (all requests in the finding)
     setHighlightedRequestIds(navigationTarget.relatedIds ?? [navigationTarget.requestId]);
 
-    // Compute which page the target request will be on
     const currentFiltered = filterRequests(session.requests, effectiveFilters);
     const currentSorted = sortRequests(currentFiltered, sort);
     const targetIndex = currentSorted.findIndex((r) => r.id === navigationTarget.requestId);

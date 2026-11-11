@@ -33,8 +33,8 @@ export const DemoGuide: React.FC<DemoGuideProps> = ({ onNavigateToRequest }) => 
           </div>
           <h3 className="step-title">Payment API HTTP 500 Response</h3>
           <p className="step-desc">
-            <code>POST https://api.example.com/v1/checkout/pay</code> returned an HTTP 500 Internal
-            Server Error status code header with a 202 ms recorded HAR wait phase.
+            <code>POST https://api.example.com/v1/checkout/pay</code> returned HTTP 500. The HAR
+            recorded a 202 ms wait for the response.
           </p>
           <button
             type="button"

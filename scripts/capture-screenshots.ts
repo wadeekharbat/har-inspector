@@ -15,14 +15,12 @@ async function capture() {
   console.log('Launching Chromium for screenshot capture...');
   const browser = await chromium.launch();
 
-  // Desktop context
   const desktopContext = await browser.newContext({
     viewport: { width: 1280, height: 800 },
     deviceScaleFactor: 2,
   });
   const page = await desktopContext.newPage();
 
-  // 1. Initial Landing / Empty State
   console.log('Capturing 01-landing-empty-state.png...');
   await page.goto(process.env.APP_URL || 'http://127.0.0.1:5173/');
   await page.waitForSelector('#btn-load-demo');
@@ -31,7 +29,6 @@ async function capture() {
     fullPage: false,
   });
 
-  // 2. Synthetic Checkout Demo Overview
   console.log('Capturing 02-synthetic-checkout-overview.png...');
   await page.click('#btn-load-demo');
   await page.waitForSelector('#session-summary-heading');
@@ -42,7 +39,6 @@ async function capture() {
     fullPage: false,
   });
 
-  // 3. Diagnostic Finding Evidence Revealed
   console.log('Capturing 03-finding-evidence-revealed.png...');
   await page.locator('#explorer-status').selectOption('2xx');
   await page.click('#btn-reveal-finding-http-error-req-6');
@@ -54,7 +50,6 @@ async function capture() {
     fullPage: false,
   });
 
-  // 4. Clean Session Demo (Zero Findings)
   console.log('Capturing 04-clean-session.png...');
   await page.click('#btn-load-clean-demo');
   await page.waitForSelector('#session-summary-heading');
@@ -65,7 +60,6 @@ async function capture() {
     fullPage: false,
   });
 
-  // 5. Export Help Guidance Modal
   console.log('Capturing 05-export-help-modal.png...');
   await page.click('#btn-open-export-help');
   await page.waitForSelector('#export-help-title');
@@ -76,7 +70,6 @@ async function capture() {
 
   await desktopContext.close();
 
-  // Mobile context
   console.log('Capturing 06-mobile-responsive.png...');
   const mobileContext = await browser.newContext({
     viewport: { width: 375, height: 812 },

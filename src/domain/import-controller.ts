@@ -63,9 +63,6 @@ export class ImportController {
     }
   }
 
-  /**
-   * Discards the current session state and returns to idle.
-   */
   public reset(): void {
     // Invalidate any in-flight asynchronous imports
     this.currentOperationId++;
@@ -79,9 +76,6 @@ export class ImportController {
     this.notify();
   }
 
-  /**
-   * Loads the bundled demonstration fixture through the exact same parser/normalizer pipeline.
-   */
   public async loadDemo(
     customFixture?: unknown,
     customSourceName?: string,
@@ -134,9 +128,6 @@ export class ImportController {
     return true;
   }
 
-  /**
-   * Loads the bundled clean demonstration fixture (0 findings) through the exact same parser pipeline.
-   */
   public async loadCleanDemo(): Promise<boolean> {
     return this.loadDemo(
       cleanSessionFixture,
@@ -145,12 +136,7 @@ export class ImportController {
     );
   }
 
-  /**
-   * Imports a local HAR / JSON file.
-   * Enforces 10 MiB limit before reading into memory.
-   * Preserves last good session on failure.
-   * Handles stale/concurrent operations safely via monotonic operationId.
-   */
+  // Keep the last good session on failure. Only the latest import may replace it.
   public async importFile(file: ImportableFile): Promise<boolean> {
     const operationId = ++this.currentOperationId;
 
@@ -175,7 +161,6 @@ export class ImportController {
       return false;
     }
 
-    // 2. Read file content asynchronously
     let rawContent: string;
     try {
       rawContent = await file.text();
@@ -196,7 +181,6 @@ export class ImportController {
       return false; // Superseded during file read
     }
 
-    // 3. Parse and normalize content
     const result = parseHarContent(rawContent, file.size);
 
     if (operationId !== this.currentOperationId) {

@@ -16,7 +16,6 @@ export const ExportHelpModal: React.FC<ExportHelpModalProps> = ({ isOpen, onClos
     // Capture the element that triggered the modal to restore focus on exit
     const previousActiveElement = document.activeElement as HTMLElement | null;
 
-    // Focus close button on entry
     closeButtonRef.current?.focus();
 
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -56,7 +55,6 @@ export const ExportHelpModal: React.FC<ExportHelpModalProps> = ({ isOpen, onClos
 
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
-      // Restore focus to opener element upon closing through any route
       previousActiveElement?.focus();
     };
   }, [isOpen, onClose]);

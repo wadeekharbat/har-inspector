@@ -15,7 +15,6 @@ test.describe('HAR Inspector ', () => {
   test('1. demo-to-finding-to-evidence: real finding card click with active filters auto-clears and reveals request', async ({
     page,
   }) => {
-    // 1. Load synthetic checkout demo
     await page.click('#btn-load-demo');
     const summaryHeading = page.locator('#session-summary-heading');
     await expect(summaryHeading).toHaveText('Demo: Broken Checkout (Synthetic)');
@@ -24,16 +23,13 @@ test.describe('HAR Inspector ', () => {
     const statusSelect = page.locator('#explorer-status');
     await statusSelect.selectOption('2xx');
 
-    // Confirm req-6 is currently hidden from the explorer table
     await expect(page.locator('#request-row-req-6')).toHaveCount(0);
 
-    // 3. In FindingsPanel, find HTTP error finding card and click its evidence button
     const findingCard = page.locator('#finding-card-finding-http-error-req-6');
     await expect(findingCard).toBeVisible();
     const revealBtn = page.locator('#btn-reveal-finding-http-error-req-6');
     await revealBtn.click();
 
-    // 4. Assert active filters were cleared and filter reset notice banner is displayed
     const resetBanner = page.locator('.filter-reset-banner');
     await expect(resetBanner).toBeVisible();
     await expect(resetBanner).toContainText(
@@ -41,7 +37,6 @@ test.describe('HAR Inspector ', () => {
     );
     await expect(statusSelect).toHaveValue('all');
 
-    // 5. Assert req-6 is revealed and selected in the table
     const selectedRow = page.locator('#request-row-req-6');
     await expect(selectedRow).toBeVisible();
     await expect(selectedRow).toHaveAttribute('aria-selected', 'true');
@@ -49,7 +44,6 @@ test.describe('HAR Inspector ', () => {
     await expect(selectedRow).toContainText('/v1/checkout/pay');
     await expect(selectedRow).toContainText('500');
 
-    // 6. Assert Selected Request Details panel displays correct status and timing evidence
     const detailPanel = page.locator('.request-details-panel');
     await expect(detailPanel).toBeVisible();
     await expect(detailPanel).toContainText('500');
@@ -64,7 +58,6 @@ test.describe('HAR Inspector ', () => {
     await page.locator('#har-file-input').setInputFiles(har2000Path);
     await expect(page.locator('#session-summary-heading')).toHaveText('2000-entries.har');
 
-    // Verify initial pagination state is Page 1 of 20
     const pageIndicator = page.locator('.pagination-info');
     await expect(pageIndicator).toContainText('Page 1 of 20');
     await expect(page.locator('#request-row-req-0')).toBeVisible();
@@ -75,11 +68,9 @@ test.describe('HAR Inspector ', () => {
     await page.locator('#explorer-status').selectOption('2xx');
     await expect(page.locator('#request-row-req-150')).toHaveCount(0);
 
-    // 3. Click evidence button for finding-http-error-req-150 in FindingsPanel
     const revealBtn = page.locator('#btn-reveal-finding-http-error-req-150');
     await revealBtn.click();
 
-    // 4. Assert filter was cleared, banner displayed, and pagination automatically moved to Page 2
     const resetBanner = page.locator('.filter-reset-banner');
     await expect(resetBanner).toBeVisible();
     await expect(resetBanner).toContainText(
@@ -87,14 +78,12 @@ test.describe('HAR Inspector ', () => {
     );
     await expect(pageIndicator).toContainText('Page 2 of 20');
 
-    // 5. Assert req-150 is visible on Page 2 and selected
     const row150 = page.locator('#request-row-req-150');
     await expect(row150).toBeVisible();
     await expect(row150).toHaveAttribute('aria-selected', 'true');
     await expect(row150).toContainText('/v1/missing-endpoint-150');
     await expect(row150).toContainText('404');
 
-    // 6. Assert details panel shows req-150 measurements
     const detailPanel = page.locator('.request-details-panel');
     await expect(detailPanel).toBeVisible();
     await expect(detailPanel).toContainText('req-150');
@@ -107,18 +96,15 @@ test.describe('HAR Inspector ', () => {
     await page.click('#btn-load-demo');
     await expect(page.locator('.demo-guide-card')).toBeVisible();
 
-    // Click Step 1 in Demo Guide
     const step1Btn = page.locator('#btn-guide-step-1');
     await step1Btn.click();
 
-    // Verify row selected
     const selectedRow = page.locator('#request-row-req-6');
     await expect(selectedRow).toBeVisible();
     await expect(selectedRow).toHaveAttribute('aria-selected', 'true');
     await expect(selectedRow).toContainText('POST');
     await expect(selectedRow).toContainText('500');
 
-    // Verify details panel
     const detailPanel = page.locator('.request-details-panel');
     await expect(detailPanel).toBeVisible();
     await expect(detailPanel).toContainText('202 ms');
@@ -130,14 +116,11 @@ test.describe('HAR Inspector ', () => {
     const cleanHarPath = path.join(testFilesDir, 'clean-session.har');
     await page.locator('#har-file-input').setInputFiles(cleanHarPath);
 
-    // Verify session loaded
     const summaryHeading = page.locator('#session-summary-heading');
     await expect(summaryHeading).toHaveText('clean-session.har');
 
-    // Verify Demo Guide is NOT rendered for imported file
     await expect(page.locator('.demo-guide-card')).toHaveCount(0);
 
-    // Verify Clean Session Finding Result Card
     const cleanCard = page.locator('.findings-clean-card');
     await expect(cleanCard).toBeVisible();
     await expect(cleanCard).toContainText('No Configured Diagnostic Rules Matched');
@@ -147,16 +130,13 @@ test.describe('HAR Inspector ', () => {
   test('5. invalid replacement preserves good session: failed import retains previous recording', async ({
     page,
   }) => {
-    // First, load clean demo session
     await page.click('#btn-load-clean-demo');
     const summaryHeading = page.locator('#session-summary-heading');
     await expect(summaryHeading).toContainText('Demo: Clean E-Commerce Catalog');
 
-    // Attempt to upload an invalid file
     const malformedHarPath = path.join(testFilesDir, '2-malformed-secret.har');
     await page.locator('#har-file-input').setInputFiles(malformedHarPath);
 
-    // Verify error banner appears
     const alertBanner = page.locator('.alert-banner');
     await expect(alertBanner).toBeVisible();
     await expect(alertBanner).toContainText('Import Failed');
@@ -299,14 +279,12 @@ test.describe('HAR Inspector ', () => {
     page.on('console', (msg) => consoleLogs.push(msg.text()));
     page.on('pageerror', (err) => pageErrors.push(err.message));
 
-    // 2. Navigate and import adversarial fixture
     await page.goto('/');
     const advHarPath = path.join(testFilesDir, 'adversarial-cases.har');
     await page.locator('#har-file-input').setInputFiles(advHarPath);
     await expect(page.locator('#session-summary-heading')).toHaveText('adversarial-cases.har');
     await expect(page.locator('.table-responsive-container')).toBeVisible();
 
-    // 3. Before reset / reload: assert synthetic credential/query/header/body tokens absent from rendered DOM
     const renderedHtml = await page.content();
 
     // Password credentials from URL must not leak into DOM
@@ -329,24 +307,20 @@ test.describe('HAR Inspector ', () => {
     expect(renderedHtml).toContain('api.example.com');
     expect(renderedHtml).toContain('?query_omitted');
 
-    // 4. Assert secrets absent from console logs and zero runtime page errors
     const logsText = consoleLogs.join('\n');
     expect(logsText).not.toContain('superSecretPass123!');
     expect(logsText).not.toContain('super-secret-token');
     expect(logsText).not.toContain('secret-cookie-value');
     expect(pageErrors).toHaveLength(0);
 
-    // 5. Reload page while imported session is active (WITHOUT clicking reset)
     await page.reload();
     await page.waitForSelector('#btn-load-demo');
 
-    // Assert imported summary, findings, and explorer are completely discarded on reload
     await expect(page.locator('#session-summary-heading')).toHaveCount(0);
     await expect(page.locator('.explorer-card')).toHaveCount(0);
     await expect(page.locator('.findings-section')).toHaveCount(0);
     await expect(page.locator('#btn-reset-session')).toBeDisabled();
 
-    // 6. Check storage mechanisms in browser: localStorage, sessionStorage, IndexedDB, and Service Workers
     const storageAudit = await page.evaluate(async () => {
       let dbCount = 0;
       if (window.indexedDB && window.indexedDB.databases) {
@@ -371,18 +345,15 @@ test.describe('HAR Inspector ', () => {
     expect(storageAudit.indexedDBDatabasesCount).toBe(0);
     expect(storageAudit.serviceWorkerRegistrationsCount).toBe(0);
 
-    // 7. Assert zero external network traffic was made throughout
     expect(externalRequests).toHaveLength(0);
   });
 
   test('11. responsive mobile checks: visible reachable controls, table horizontal scroll, usable details and help dialog', async ({
     page,
   }) => {
-    // Set mobile viewport (375x667)
     await page.setViewportSize({ width: 375, height: 667 });
     await page.click('#btn-load-demo');
 
-    // 1. Verify reachable, visible primary controls on mobile
     const loadDemoBtn = page.locator('#btn-load-demo');
     const cleanDemoBtn = page.locator('#btn-load-clean-demo');
     const helpBtn = page.locator('#btn-open-export-help');
@@ -408,7 +379,6 @@ test.describe('HAR Inspector ', () => {
     });
     expect(buttonsInBounds).toBe(true);
 
-    // 2. Verify internal table horizontal scrolling without root page scroll
     const tableContainer = page.locator('.table-responsive-container');
     await expect(tableContainer).toBeVisible();
 
@@ -424,7 +394,6 @@ test.describe('HAR Inspector ', () => {
     expect(scrollMetrics.hasHorizontalScroll).toBe(true);
     expect(scrollMetrics.containerClientWidth).toBeLessThanOrEqual(375);
 
-    // Test scrolling internal table container horizontally
     await page.evaluate(() => {
       const container = document.querySelector('.table-responsive-container');
       if (container) container.scrollLeft = 200;
@@ -434,7 +403,6 @@ test.describe('HAR Inspector ', () => {
     });
     expect(scrolledLeft).toBeGreaterThan(0);
 
-    // 3. Verify Selected Request Details panel is usable and reachable on mobile
     const row0 = page.locator('#request-row-req-0');
     await row0.click();
 
@@ -449,12 +417,10 @@ test.describe('HAR Inspector ', () => {
     });
     expect(detailsInBounds).toBe(true);
 
-    // Close details
     const closeDetailsBtn = page.locator('#btn-close-details');
     await closeDetailsBtn.click();
     await expect(detailsPanel).toHaveCount(0);
 
-    // 4. Verify Export Help dialog on mobile
     await helpBtn.click();
     const modalDialog = page.locator('.modal-dialog');
     await expect(modalDialog).toBeVisible();
